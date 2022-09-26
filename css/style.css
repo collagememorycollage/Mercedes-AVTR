@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Corporate A';
+    src: url('CorporateA-Bold.woff2') format('woff2'),
+        url('CorporateA-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #070A1B;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 400;
+    color:#fff;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+button{
+     background-color: transparent;
+     border:none;
+     padding: 0;
+     cursor: pointer;
+}
+
+ul{
+    list-style:none;
+}
+
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header__logo{
+    margin-left: 115px;
+}
+
+.list__items{
+    display:flex;
+}
+
+.list__item{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background .3s;
+}
+
+.list__item:hover{
+    background-color: #C1A1D2;
+    
+}
+
+.list__item + li {
+    margin-left: 30px;
+}
+
+.header__content {
+    background-image: url(/img/bg-header-content.png);
+    min-height: calc(100vh - 100px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+
+.header__content::before{
+    content: "";
+    background-image: url(/img/merc-logo.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+}
+
+
+.header__content-title{
+    font-family: 'Corporate A';
+    font-size: 72px;
+    margin-bottom: 5px;
+    line-height: 120%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__cocntent-subtitle{
+    font-family: 'Roboto Condensed';
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 49px;
+}
+
+
+.concept{
+    padding-top: 150px;
+    margin-bottom: 150px;
+
+}
+.concept__inner{
+    max-width: 900px;
+    margin-left: auto;
+}
+
+.section__title{
+    margin-bottom: 25px;
+    color: #F402A2;
+    font-family: 'Corporate A';
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+.concept__subtitle{
+    font-size: 24px;
+}
+.concept__img{
+    padding-top: 25px;
+}
+
+.premier__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.premier__left-collumn{
+    max-width: 570px;
+}
+
+.premier__right-collumn{
+    max-width: 570px;
+}
+
+.premier__text{
+    margin-bottom: 25px;
+}
+
+.neon__btn{
+    text-transform: uppercase;
+    color:#F402A2;
+    display: block;
+    font-size: 18px;
+    border: #F402A2 1px solid;
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    font-family:'Corporate A';
+    text-align: center;
+    transition: all .3s;
+}
+
+.neon__btn:hover{
+    color: #53A1CB;
+    border: #53A1CB 1px solid;
+}
+
+
+.premier__img-left{
+    margin-bottom: 25px;
+}
+
+.video__img{
+    margin-bottom: 25px;
+}
+.video__btn{
+    display: flex;
+    color: #F402A2;
+    font-size: 18px;
+    font-family: 'Corporate A';
+    text-transform: uppercase;
+    border: 1px solid #F402A2;
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
+    transition: all .3s;
+}
+
+button > span{
+    margin-left: 9px;
+}
+
+.video__btn:hover{
+    color: #53A1CB;
+    border: 1px solid #53A1CB;
+}
+
+.video__btn:hover path {
+    fill: #53A1CB;
+}
+.video__btn path {
+    transition: all .3s;
+}
+
+
+.benefits__interior{
+    display: grid;
+    grid-template-columns: 255px 255px auto 330px;
+    grid-template-rows: auto auto;
+    gap: 14px 44px;
+}
+
+.benefits__cell-one{
+    grid-row: 1/3;
+}
+
+.benefits__cell-two{
+    grid-row-end: -1;
+}
+.benefits__cell-three{
+    grid-column-end: -1;
+    grid-row-end: -1; 
+}
+
+
+
+.footer{
+    background-color: #070A1B;  
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
